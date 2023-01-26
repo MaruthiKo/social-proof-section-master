@@ -1,0 +1,154 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Variables */
+:root{
+    --very-dark-magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+    --Dark-grayish-magenta: hsl(303, 10%, 53%);
+    --light-grayish-magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+    --small-weight: 400;
+    --med-weight: 500;
+    --bold-weight: 700;
+}
+
+/* UTILITY CLASSES */
+body{
+    font-size: 15px;
+    background-color: white;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 5rem;
+    max-height: 90vh;
+}
+
+.card{
+    border: 1px solid var(--very-dark-magenta);
+    background-color: var(--very-dark-magenta);
+    padding: 1.5rem;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 25%;
+}
+
+.reviewer-info{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.reviewer-name{
+    font-weight: var(--med-weight);
+    color: white;
+}
+
+.reviewer-verified{
+    color: var(--Soft-Pink);
+}
+
+.review{
+    color: white;
+}
+/* Main */
+
+.main{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/* Left Main */
+.left{
+    width: 48%;
+    padding: 2rem;
+}
+
+.left h1{
+    font-size: 2rem;
+    width: 50%;
+    color: var(--very-dark-magenta);
+    margin-bottom: 1rem;
+    line-height: 1;
+}
+
+.left p{
+    width: 75%;
+    color: var(--Dark-grayish-magenta);
+    font-weight: var(--med-weight);
+}
+/* Right Main */
+.right{
+    width: 48%;
+    padding: 2rem;
+}
+
+.ratings{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.rating{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid var(--light-grayish-magenta);
+    color: var(--very-dark-magenta);
+    background-color: var(--light-grayish-magenta);
+    font-weight: var(--bold-weight);
+    width: 80%;
+}
+
+.rating:nth-child(2){
+   margin-left: 2rem; 
+}
+
+
+.rating:nth-child(3){
+    margin-left: 4rem; 
+ }
+
+.stars{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.rating img{
+    width: 10px;
+    height: 10px;
+}
+/* Reviews */
+.reviews{
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    margin: 2rem;
+}
+
+.reviewer-img{
+    border-radius: 50%;
+    height: 3rem;
+}
+
+/* Cards */
+
+.card2{
+    margin: 1rem 0 -1rem 0;
+}
+
+.card3{
+    margin: 2rem 0 -2rem 0;
+}
